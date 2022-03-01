@@ -10,7 +10,16 @@ Keep following packages and this package(trackingwithrp) in same ros-workspace
 2. To use RPLidar A1: [rplidar_ros](https://github.com/Slamtec/rplidar_ros)
 3. To modify laser angle scan: [laser_filters (noetic-devel)](https://github.com/ros-perception/laser_filters/tree/noetic-devel)
 
-## Run following command -
+## Run following commands -
+To start rplidar & tracking camera:
 ```
 roslaunch trackingwithrp display.launch
+```
+To start gmapping:
+```
+roslaunch trackingwithrp gmapping.launch
+```
+To save the map:
+```
+rosrun map_server map_saver -f <map name>
 ```
